@@ -5,10 +5,9 @@ class UserMailer < ApplicationMailer
   #
   #   en.user_mailer.account_activation.subject
   #
-  def account_activation
-    @user = User.find(params[:id])
-    @user.activation_token="fwd23r2r32t32t32t3"
-    mail to: @user.email, subject: "Account activation"
+  def account_activation(user)
+    @user = user
+    mail to: user.email, subject: "Account activation"
   end
 
   # Subject can be set in your I18n file at config/locales/en.yml
