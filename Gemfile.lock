@@ -64,6 +64,8 @@ GEM
       public_suffix (>= 2.0.2, < 5.0)
     autoprefixer-rails (10.2.5.0)
       execjs (< 2.8.0)
+    awesome_nested_set (3.4.0)
+      activerecord (>= 4.0.0, < 7.0)
     bcrypt (3.1.13)
     bindex (0.8.1)
     bootsnap (1.7.5)
@@ -212,6 +214,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  awesome_nested_set (~> 3.4.0)
   bcrypt (= 3.1.13)
   bootsnap (>= 1.4.4)
   bootstrap-sass (= 3.4.1)
