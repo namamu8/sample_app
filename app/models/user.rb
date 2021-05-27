@@ -79,7 +79,7 @@ class User < ApplicationRecord
   end
 
   def feed
-    Micropost.sort_desc.where("user_id = ?", id)
+    Micropost.sort_desc.by_id id
   end
 
   def follow(other_user)
