@@ -4,7 +4,6 @@ class RelationshipsController < ApplicationController
   before_action :find_relationship, only: :destroy
 
   def create
-    @user = User.find(params[:followed_id])
     current_user.follow(@user)
     respond_to :js
   end
